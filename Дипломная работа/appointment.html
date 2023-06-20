@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>GS - Главная</title>
+        <link rel="icon" sizes="16x16" href="assets/img/favicon-icon.png">
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/flaticon.css">
+		<link rel="stylesheet" href="assets/css/ionicons.min.css">
+		<link rel="stylesheet" href="assets/css/owl.carousel.css">
+		<link rel="stylesheet" href="assets/css/magnific-popup.css">
+		<link rel="stylesheet" href="assets/css/swiper.min.css">
+		<link rel="stylesheet" href="assets/css/datepicker.css">
+		<link rel="stylesheet" href="assets/css/animate.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="assets/css/responsive.css">
+		<script src="assets/js/jquery-1.12.4.min.js"></script>
+	</head>
+	
+	<body>        
+        <!-- Начало блока главного меню -->
+        <div class="main-menu-area" data-spy="affix" data-offset-top="55">
+            <div class="container"> 
+                <div class="row"> 
+                    <div class="col-md-3"> 
+                        <div class="logo">
+                            <a href="index.html"><img src="assets/img/logo.png" alt="Logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-9"> 
+                        <!-- Начало меню -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <div class="main-menu">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="index.html">Главная</a></li>  
+                                    <li><a href="about-us.html">О нас</a></li>
+                                    <li><a href="services.html">Услуги</a></li>
+                                    <li><a href="appointment.html">Запись</a></li>
+                                    <li><a href="contact-us.html">Контакты</a></li>
+                                    <li><a href="signin.html">Войти в систему</a></li>
+                                </ul>
+                            </div>
+                        </div><!-- Конец меню -->   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Конец блока главного меню -->
+
+        <!-- Начало блока текста -->
+        <div class="breadcumbs-area breadcumbs-bg-1 bc-area-padding">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h2>Заполните анкету и мы свяжемся с вами</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Конец блока текста -->
+    
+        <!-- Начало блока "Запись" -->
+        <div class="content-block-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="apointment-preview-boxed man-image-bg wow fadeInUp"></div>
+                    </div>
+                    <div class="col-md-6">
+                       <div class="section-title text-center">
+                           <h2><span>Записаться На</span> Прием</h2>
+                           <div class="car-icon"><img src="assets/img/cars.png" alt="car"></div>
+                           <p>Для записи заполните поля ниже и мы с вами свяжемся.</p>
+                       </div>
+                        <form class="appointment-form" action="index.html">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Информация об Авто</label>
+                                    <select id="Year">
+                                        <option value="hide">-- Год, Модель --</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Выберете услуги</label>
+                                    <select id="selectServices">
+                                        <option value="hide">-- Выберете услугу --</option>
+                                        <option value="1">Диагностика двигателя</option>
+                                        <option value="2">Диагностика подвески</option>
+                                        <option value="3">Замена масла</option>
+                                        <option value="4">Ремонт Трансмиссии</option>
+                                        <option value="4">Ремонт двигателя</option>
+                                        <option value="4">Ремонт коробки передачь</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Выберете дату</label>
+                                    <input type="text" id="datepicker" name="appointmentDate" placeholder="Выберете дату" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Выберете время</label>
+                                    <select id="Time">
+                                        <option value="hide">-- Выбрать --</option>
+                                        <option value="2010">09:00AM - 10:00AM</option>
+                                        <option value="2011">10:00AM - 11:00AM</option>
+                                        <option value="2012">11:00AM - 12:00PM</option>
+                                        <option value="2013">12:00PM - 01:00PM</option>
+                                        <option value="2014">01:00PM - 02:00PM</option>
+                                        <option value="2015">02:00PM - 03:00PM</option>
+                                        <option value="2015">03:00PM - 04:00PM</option>
+                                        <option value="2015">04:00PM - 05:00PM</option>
+                                        <option value="2015">05:00PM - 06:00PM</option>
+                                        <option value="2015">06:00PM - 07:00PM</option>
+                                        <option value="2015">07:00PM - 08:00PM</option>
+                                        <option value="2015">08:00PM - 09:00PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                               <div class="col-md-12">
+                                   <p>Контактная информация</p>
+                               </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="yourName" placeholder="Ваше Имя" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" name="yourEmail" placeholder="Ваш E-mail" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="text" name="yourPhone" placeholder="Номер телефона" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <textarea name="yourMessage" id="yourMessage" placeholder="Опишите проблема" required></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <button class="btn theme-btn" type="submit">Записаться</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Начало блока "Запись" -->
+        
+        <!-- Начало блока "Подвал сайта" -->
+        <footer class="site-footer">
+            <!-- Начало блока "Данные" -->
+            <div class="footer-top-area">
+                <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                            <div class="footer-top-info">
+                            <span class="footer-icons"><i class="fa fa-map-o"></i></span> <p>Новосибирск, ул.Нижегородская 238</p>
+                            </div>
+                    </div>
+                    <div class="col-sm-4">
+                            <div class="footer-top-info">
+                            <span class="footer-icons"><i class="flaticon-crane"></i></span> <p>Рабочий день с 10:00-20:00. Без выходных</p>
+                            </div>
+                    </div>
+                    <div class="col-sm-4">
+                            <div class="footer-top-info">
+                            <span class="footer-icons"><i class="fa fa-headphones"></i></span> <p>Телефон для связи +7 (960) 785-09-27</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="hr-line"></div>
+                </div>
+            </div> 
+            <!-- Начало блока "Данные"  -->
+
+            <!-- Начало блока "Об авторе" -->
+            <div class="footer-copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-5">
+                            &copy; НГАСУ(Сибстрин) <script type="text/javascript">
+                            var d=new Date();
+                            document.write(d.getFullYear());
+                            </script>.
+                        </div>
+                        <div class="col-md-6 col-sm-7 text-right">
+                            <a href="#">Игнатов Владимир</a> <span class="seprator">|</span> <a href="#">410а</a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- Конец блока "Об авторе" -->
+        </footer> 
+        <!-- Конец блока "Подвал сайта" -->
+        
+        <!-- Начало кнопки "Вверх" -->
+        <a href="#content" class="back-to-top"></a>
+        <!-- Конец кнопки "Вверх" -->
+
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/mixitup.min.js"></script>
+        <script src="assets/js/swiper.jquery.min.js"></script>
+        <script src="assets/js/datepicker.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/isotope.pkgd.min.js"></script>
+        <script src="assets/js/waypoints.min.js"></script>
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <script src="assets/js/jquery.ripples-min.js"></script>
+        <script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
+        <script src="assets/js/jarallax.min.js"></script>
+        <script src="assets/js/parsley.min.js"></script>
+        <script src="assets/js/active.js"></script>    
+	</body>
+</html>
